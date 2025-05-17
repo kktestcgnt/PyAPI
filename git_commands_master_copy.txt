@@ -1,0 +1,126 @@
+cmd>git --version
+https://git-scm.com
+cmd>git config --list
+cmd>git config --global user.name "krishnachaya"
+cmd>git config --global user.email xxx@gmail.com
+cmd>git config --list
+cmd>git config user.name
+cmd>git help
+cmd>git help config
+cmd>hit q to get out of man-help page
+---------------------------------------
+
+cmd>git clone <ssh link>
+
+cmd>git init
+cmd>touch one.txt
+cmd>git status
+cmd>git add one.txt
+	or
+cmd>git add .
+cmd>git commit -m "added one.txt"
+cmd>git diff
+--------------------------------------
+cmd>git remote add origin linkhere
+cmd>git remote -v
+cmd>git remote
+cmd>git push --set-upstream origin master
+cmd>git branch --set-upstream-to=origin/master
+cmd>git pull
+cmd>git pull --allow-unrelated-histories
+cmd>git push
+---------------------------------------
+cmd>git branch alpha
+cmd>git branch beta
+cmd>git branch
+	or
+cmd>git branch --list
+cmd>git checkout alpha
+	or
+create a branch and switch to branch
+cmd>git checkout -b alpha
+cmd>create a file with data in it
+cmd>git status
+cmd>git add .
+cmd>git commit -m "added a file in new branch"
+
+--> New branch moving to git repo.
+cmd>git push --set-upstream origin alpha
+cmd>git checkout master
+# add the data to the file in master
+# add and push to remote
+-----------------------------------
+cmd>git checkout master
+cmd>git merge alpha
+cmd>git add .
+cmd>git push
+cmd>git branch -d alpha
+
+--> Branch deletion on git repo
+cmd>git push origin :alpha
+---------------------------------------------
+--------------------------------------------
+1.add a file from git-hub
+cmd>git push
+cmd>error
+cmd>git pull
+cmd>git push
+2.add a new file to project from git-hub
+and creat new branch "Contact"
+->click on propose new file
+->create pull request
+cmd>git fetch origin
+cmd>git checkout Contact
+-------------------------------------------
+creating .gitignore file
+filename
+src/*
+!src/style.css
+*.zip
+#can add comments
+
+cmd>git rm --cached about.html
+
+------------------------------------------
+cmd>git revert commit-id
+cmd>git push
+cmd>git revert HEAD~3
+cmd>git revert HEAD~5..HEAD`1
+
+
+
+
+cmd>cd .ssh
+cmd>ssh-keygen
+cmd>copy the contents from id_rsa.pub and past it in git-project/settings/Deploykeys click on add diploykey and past the conte
+
+
+List comprehensions (with if else)
+List slicing
+Reverse list without using -1
+list mapping and filter
+list using negative indexes
+String to list conversion and viceversa
+join and split in list
+
+paragraph to dict.
+
+
+
+
+Jenkins:
+https://www.youtube.com/watch?v=1vFDp0JOgBQ
+
+https://www.youtube.com/watch?v=iotloCXtIzY
+
+https://www.youtube.com/watch?v=iotloCXtIzY
+https://www.youtube.com/watch?v=4OQ6Hk5hl0k
+
+IMP
+https://www.youtube.com/watch?v=CFt0teO_y_s&list=PLXbcghgSZDrpB7BbMWlue6WUUU1ASJCWN
+
+
+
+echo %CD%
+set PYTHONPATH=%PYTHONPATH%;%CD%
+pytest -s -v 

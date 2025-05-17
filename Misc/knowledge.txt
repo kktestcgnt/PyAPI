@@ -1,0 +1,26 @@
+def update_data():
+    print("Inside post method")
+
+    data = requests.request.json
+    print(data)
+    return data
+
+ChatGPT said:
+Your update_data function has an issue: requests.request.json is incorrect. The requests library is typically used to send HTTP requests, not to handle incoming requests like you would in a web server context (e.g., Flask or Django).
+
+If you're working in a Flask application and want to access JSON data from an incoming POST request, you should use request.get_json() from Flask's request object — not from requests.
+
+Here's how you can fix your function in a Flask context:
+
+✅ Correct Version (Flask):
+python
+Copy
+Edit
+from flask import request
+
+def update_data():
+    print("Inside post method")
+
+    data = request.get_json()
+    print(data)
+    return data
